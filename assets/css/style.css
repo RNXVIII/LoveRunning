@@ -1,8 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-
-
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -19,9 +17,6 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
-
-
-
 
 /* Header */
 header {
@@ -48,7 +43,19 @@ h1 {
     color: #252525;
 }
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
 
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
 
 /* Navbar styles with dropdown toggle */
 nav {
@@ -75,35 +82,13 @@ nav {
     font-size: 2rem;
 }
 
-/*main content*/
-
+/* Main content */
 main {
-    background-color: red;
-     /* Make main element take up any surplus space to push footer down */
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
-
-/*this is where ids and classes start*/
-
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
-}
-
-#menu>li {
-    margin-bottom: 1em;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-
-
-
-
-/*this is where ids and classes end*/
 
 /* Footer */
 footer {
