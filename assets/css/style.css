@@ -70,10 +70,12 @@ nav {
 }
 
 /* Nav toggle */
+/*check boxes have a psuedoclass to check when there being checked. when checked using the checked class we use a 
+a tilde to target the tags under nav so preety much ur A tags , the ul wont display for obious reasons */
 #nav-toggle:checked~nav {
     display: block;
 }
-
+/* getting rid of the checkbox*/
 #nav-toggle {
     display: none;
 }
@@ -106,37 +108,36 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
-    
-         #menu {
-             display: flex;
-         }
-    
-         #menu>li {
-             padding-left: 1rem;
-         }
-    
-         .nav-toggle-label {
-             display: none;
-         }
 
-         /*she did this to use the surplus space as really spaced out*/
-         #logo {
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /*she did this to use the surplus space as really spaced out*/
+    #logo {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
-        }
+    }
 
-  /* Main content */
-  main {
-      /* Push main content down to accommodate larger header */
-      margin-top: 79px;
-  }
-}
-
-/* Media query: tablets and larger (992px and up) */
-@media screen and (min-width: 992px){
-    #menu a:hover{
-        border-bottom: 1px solid #3a3a3a;
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
     }
 }
 
+/* Media query: tablets and larger (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
