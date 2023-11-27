@@ -86,11 +86,20 @@ a tilde to target the tags under nav so preety much ur A tags , the ul wont disp
 
 /* Main content */
 main {
-    background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
+/*hero sectrion*/
+
+#hero {
+    height: 600px;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+
+
 
 /* Footer */
 #social-networks {
